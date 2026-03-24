@@ -1,0 +1,6 @@
+[2026-03-24 18:15:22,484: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-24 18:15:22,510: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-24 18:15:22,510: INFO: common: created directory at: artifacts]
+[2026-03-24 18:15:22,515: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-24 18:15:22,515: INFO: 3172177572: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-24 18:15:32,174: INFO: 3172177572: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
