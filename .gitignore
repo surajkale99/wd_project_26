@@ -1,0 +1,16 @@
+# 🔹 Virtual Environment
+proenv/
+env/
+venv/
+
+
+# 🔹 Jupyter Notebook
+.ipynb_checkpoints/
+
+# folder
+# data/
+
+
+# 🔹 VS Code settings
+.vscode/
+
