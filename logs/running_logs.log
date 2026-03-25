@@ -4,3 +4,171 @@
 [2026-03-24 18:15:22,515: INFO: common: created directory at: artifacts/data_ingestion]
 [2026-03-24 18:15:22,515: INFO: 3172177572: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2026-03-24 18:15:32,174: INFO: 3172177572: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 17:12:23,029: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-25 17:12:23,033: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-25 17:12:23,048: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-25 17:12:23,049: INFO: common: created directory at: artifacts]
+[2026-03-25 17:12:23,050: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-25 17:12:23,050: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 17:12:34,437: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 17:12:35,608: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-25 17:59:40,128: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-25 17:59:40,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-25 17:59:40,134: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-25 17:59:40,135: INFO: common: created directory at: artifacts]
+[2026-03-25 17:59:40,136: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-25 17:59:40,137: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 17:59:49,880: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 17:59:50,995: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-25 17:59:50,995: INFO: main: >>>>>> stage prepare base model started <<<<<<]
+[2026-03-25 17:59:50,999: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-25 17:59:51,006: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-25 17:59:51,008: INFO: common: created directory at: artifacts]
+[2026-03-25 17:59:51,009: ERROR: main: "'ConfigBox' object has no attribute 'prepare_base_model'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wd_project_26\main.py", line 22, in <module>
+    data_ingestion.main()
+  File "D:\wd_project_26\src\cnnClassifier\pipeline\stage_02_preparebasepipeline.py", line 14, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "D:\wd_project_26\src\cnnClassifier\config\configuration.py", line 35, in get_prepare_base_model_config
+    config = self.config.prepare_base_model
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+[2026-03-25 18:02:45,338: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-25 18:02:45,341: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-25 18:02:45,345: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-25 18:02:45,346: INFO: common: created directory at: artifacts]
+[2026-03-25 18:02:45,347: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-25 18:02:45,348: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 18:02:55,488: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 18:02:56,450: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-25 18:02:56,454: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-03-25 18:02:56,459: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-25 18:02:56,491: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-25 18:02:56,499: INFO: common: created directory at: artifacts]
+[2026-03-25 18:02:56,508: ERROR: main: "'ConfigBox' object has no attribute 'prepare_base_model'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wd_project_26\main.py", line 22, in <module>
+    prepare_base_model.main()
+  File "D:\wd_project_26\src\cnnClassifier\pipeline\stage_02_preparebasepipeline.py", line 14, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "D:\wd_project_26\src\cnnClassifier\config\configuration.py", line 35, in get_prepare_base_model_config
+    config = self.config.prepare_base_model
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+[2026-03-25 18:05:21,637: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-25 18:05:21,642: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-25 18:05:21,647: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-25 18:05:21,648: INFO: common: created directory at: artifacts]
+[2026-03-25 18:05:21,649: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-25 18:05:21,650: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 18:05:31,290: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-03-25 18:05:32,254: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-25 18:05:32,256: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-03-25 18:05:32,259: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-25 18:05:32,285: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-25 18:05:32,289: INFO: common: created directory at: artifacts]
+[2026-03-25 18:05:32,290: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-03-25 18:05:34,725: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
