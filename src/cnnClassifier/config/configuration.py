@@ -1,7 +1,7 @@
 from src.cnnClassifier.constants import *
 from src.cnnClassifier.utils.common import read_yaml,create_directories
 from pathlib import Path
-from src.cnnClassifier.entity.config import DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig
+from src.cnnClassifier.entity.config import DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig,EvaluationConfig
 import os 
 
 
@@ -73,4 +73,14 @@ class ConfigurationManager:
 
         return training_config 
     
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.keras",
+            training_data="artifacts/data_ingestion/kidney-ct-scan-image",
+            mlflow_uri="https://dagshub.com/surajkale99/wd_project_26.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
     
