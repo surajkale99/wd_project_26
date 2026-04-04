@@ -8,10 +8,11 @@ STAGE_NAME = "Evaluation stage"
 
 class EvaluationPipeline:
     def __init__(self):
-        os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/surajkale99/wd_project_26.mlflow"
+        pass
+        #os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/surajkale99/wd_project_26.mlflow"
         # Set your DagsHub credentials (MLflow uses HTTP Basic Auth)
-        os.environ["MLFLOW_TRACKING_USERNAME"] = "surajkale99"
-        os.environ["MLFLOW_TRACKING_PASSWORD"] = "e4f2406488322cebc687e5c389841eb67f8beeec"
+        #os.environ["MLFLOW_TRACKING_USERNAME"] = "surajkale99"
+        #os.environ["MLFLOW_TRACKING_PASSWORD"] = "e4f2406488322cebc687e5c389841eb67f8beeec"
 
     def main(self):
         config = ConfigurationManager()
@@ -19,5 +20,5 @@ class EvaluationPipeline:
         evaluation = Evaluation(eval_config)
         evaluation.evaluation()
         evaluation.save_score()
-        evaluation.log_into_mlflow()
+        #evaluation.log_into_mlflow()
 
