@@ -233,3 +233,53 @@ x==========x]
 [2026-03-26 18:20:12,483: INFO: main: >>>>>> stage Model evaluation completed <<<<<<
 
 x==========x]
+[2026-04-04 13:15:29,306: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-04 13:15:29,322: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-04 13:15:29,345: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-04 13:15:29,363: INFO: common: created directory at: artifacts]
+[2026-04-04 13:15:29,364: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-04 13:15:29,365: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-04 13:15:37,015: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-04 13:15:38,106: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-04 13:15:38,107: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-04 13:15:38,112: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-04 13:15:38,115: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-04 13:15:38,117: INFO: common: created directory at: artifacts]
+[2026-04-04 13:15:38,117: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-04 13:15:40,504: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-04 13:15:40,505: INFO: main: >>>>>> stage Model training started <<<<<<]
+[2026-04-04 13:15:40,510: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-04 13:15:40,514: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-04 13:15:40,532: INFO: common: created directory at: artifacts]
+[2026-04-04 13:15:40,534: INFO: common: created directory at: artifacts\training]
+[2026-04-04 13:18:47,727: INFO: main: >>>>>> stage Model training completed <<<<<<
+
+x==========x]
+[2026-04-04 13:18:47,728: INFO: main: >>>>>> stage Model evaluation started <<<<<<]
+[2026-04-04 13:18:47,735: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-04 13:18:47,738: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-04 13:18:47,739: INFO: common: created directory at: artifacts]
+[2026-04-04 13:19:38,436: INFO: common: json file saved at: scores.json]
+[2026-04-04 13:19:38,441: INFO: common: json file saved at: scores.json]
+[2026-04-04 13:20:15,171: INFO: main: >>>>>> stage Model evaluation completed <<<<<<
+
+x==========x]
+[2026-04-04 14:13:47,844: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2026-04-04 14:13:47,846: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-04-04 14:13:47,854: INFO: _internal:  * Restarting with stat]
+[2026-04-04 14:13:58,227: WARNING: _internal:  * Debugger is active!]
+[2026-04-04 14:13:58,236: INFO: _internal:  * Debugger PIN: 376-430-947]
+[2026-04-04 14:15:57,072: INFO: _internal: 127.0.0.1 - - [04/Apr/2026 14:15:57] "GET / HTTP/1.1" 200 -]
+[2026-04-04 14:17:11,101: INFO: _internal: 127.0.0.1 - - [04/Apr/2026 14:17:11] "POST /predict HTTP/1.1" 200 -]
+[2026-04-04 14:18:11,451: INFO: _internal: 127.0.0.1 - - [04/Apr/2026 14:18:11] "POST /predict HTTP/1.1" 200 -]
+[2026-04-04 14:18:56,771: INFO: _internal: 127.0.0.1 - - [04/Apr/2026 14:18:56] "POST /predict HTTP/1.1" 200 -]
+[2026-04-04 14:19:49,697: INFO: _internal: 127.0.0.1 - - [04/Apr/2026 14:19:49] "POST /predict HTTP/1.1" 200 -]
+[2026-04-04 14:35:27,203: INFO: _internal:  * Detected change in 'D:\\wd_project_26\\app.py', reloading]
+[2026-04-04 14:35:28,612: INFO: _internal:  * Restarting with stat]
+[2026-04-04 14:35:48,342: WARNING: _internal:  * Debugger is active!]
+[2026-04-04 14:35:48,351: INFO: _internal:  * Debugger PIN: 376-430-947]
